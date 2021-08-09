@@ -1,0 +1,164 @@
+
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+#topnav {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.rigid {
+    flex: 0 0 auto;
+    padding: 10px;
+}
+
+.separator {
+    flex: 1 1 auto;
+}
+
+#user {
+    background-color: rgb(255, 123, 0);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+#apps {
+    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    background-size:528px 68px;
+    background-position: -132px -38px;
+    background-repeat: no-repeat;
+    width: 30px;
+    opacity: 0.55;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+#apps:hover {
+    opacity: 1.0;
+}
+
+.leftalign {
+    justify-self: flex-start;
+}
+.rightalign {
+    justify-self: flex-end;
+}
+
+#logo {
+    padding-top: 200px;
+    text-align: center;
+}
+
+#searchform-container {
+    margin: 0 auto;
+    width: auto;
+    max-width: 578px;
+    padding-top: 20px;
+}
+
+#searchbar {
+    border: 1px solid #dfe1e5;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    height: 34px;
+    padding: 5px;
+}
+#searchbar:hover {
+    box-shadow: 0px 1px 6px 0px rgba(32, 33, 36, 0.281);
+}
+#searchbar #query {
+    width: 80%;
+}
+#searchbar #query:focus {
+    border-width: 0px;
+    outline: 0px;
+}
+
+#searchbuttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#searchbar input[type=text] { 
+    border: 0;
+    display: flex;
+    flex: 1 1 100%;
+    height: 34px !important;
+    line-height: 34px;
+}
+
+.mybutton {
+    height: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0 16px 0 16px;
+    border: 1px solid #fafafa;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+.mybutton:hover {
+    border: 1px solid #dfe1e5;
+    box-shadow: 0 1px 0px 0px #dfe1e5;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    width: 100%;
+    min-height: 95px;
+    height: 95px;
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .segment {
+    height: 50%;
+    padding: 15px;
+    padding-left: 25px;
+    color: rgba(0,0,0,.54);
+}
+footer #bottomfooter {
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottomborder {
+    border-bottom: 1px solid #dadce0;
+}
+
+footer #bottomfooterleft{
+    display: flex;
+}
+footer #bottomfooterright{
+    display: flex;
+}
+
+footer #bottomfooter a {
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer #bottomfooter a:hover {
+    text-decoration: underline;
+}
